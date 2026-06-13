@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Page 1: Introduction -->
+    <section id="page-1" class="page active">
+        <div class="intro-container">
+            <div class="glass-card">
+                <h1 class="heading-xl">Hey Bestie ❤️</h1>
+                <p class="intro-message">
+                    I made something for you.<br><br>
+                    Not because I had to,<br>
+                    but because there are some people who become so important that simple words no longer feel
+                    enough.<br><br>
+                    You've been one of those people for me.<br><br>
+                    So I wanted to create a little space where I could tell you just how much your presence means to me.
+                </p>
+                <button class="btn btn-primary" onclick="goToPage(2)">Continue ✨</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 2: Memories Gallery -->
+    <section id="page-2" class="page">
+        <div class="page-container">
+            <h2 class="section-title">Our Memories Together ❤️</h2>
+
+            <div class="gallery">
+                <div class="gallery-card">
+                    <img src="1.jpg" alt="Memory 1" class="gallery-image">
+                </div>
+                <div class="gallery-card">
+                    <img src="2.jpg" alt="Memory 2" class="gallery-image">
+                </div>
+                <div class="gallery-card">
+                    <img src="3.jpg" alt="Memory 3" class="gallery-image">
+                </div>
+                <div class="gallery-card">
+                    <img src="4.jpg" alt="Memory 4" class="gallery-image">
+                </div>
+                <div class="gallery-card">
+                    <img src="5.jpg" alt="Memory 5" class="gallery-image">
+                </div>
+                <div class="gallery-card">
+                    <img src="6.jpg" alt="Memory 6" class="gallery-image">
+                </div>
+            </div>
+
+            <div class="message-section">
+                <h3 class="heading-lg">A Few Things I Want You To Know ❤️</h3>
+                <p class="message-text">
+                    Hi Cutie, I know we haven't known each other for a long time, but I feel like I've known you
+                    forever.
+                    I'm so happy that you came into my life. You've made me so happy and I can't imagine my life without
+                    you. I am so lucky to have you in my life.
+                    I want to say sorry for those 10 days which you have suffered because of me. I know that I am not
+                    that good but I promise that I will try
+                    and make sure to keep you happy and make you smile every day. And most importantly i want to thank
+                    you for accepting me
+                    for who i am and for giving me a chance to prove my self and be a part of your life. I know mai abhi
+                    bhi kaffi galtiya kr deta hu
+                    pr tum maaf kr diya kro m aapko to pyara bachha hu na.
+                </p>
+                <p class="message-text">
+                    I want you to know you are the only female best friend I've ever had and there will be no one else
+                    except you. You are the only one and you will
+                    be the only one for me for rest of my life. I promise i will always be there for you in every ups
+                    and down of your life. I will always take care
+                    of you like a baby, I will always keep you happy and I will always love you no matter what happen. I
+                    want ki aap humesha mere saath rho for the rest
+                    of my life. And I can't imagine any other Bestie other than you in my life who can do what you have
+                    done for me. I want to make many beautiful,
+                    romantic, funny, clingy, pookie, everykind of memories with you. I Love You my bestie! ❤️, chahe tum
+                    mera fayda bhi utha lo kuch bhi kr lo, mai
+                    humesha rhunga, chahe tum mereko daanto ya mereko kamar wali video na bhi bhejo. I Love You! ❤️
+                    Forever & Always...
+                </p>
+            </div>
+
+            <button class="btn btn-primary" onclick="goToPage(3)">One More Thing ❤️</button>
+        </div>
+    </section>
+
+    <!-- Page 3: The Question -->
+    <section id="page-3" class="page">
+        <div class="question-container">
+            <div class="night-sky-bg"></div>
+            <div class="question-content">
+                <h1 class="heading-xl">I Have Something To Ask You...</h1>
+                <p class="question-message">
+                    You've become one of the most special person in my life.<br><br>
+                    Your presence makes ordinary days feel better.<br><br>
+                    Your friendship has given me countless reasons to smile.<br><br>
+                    And because of that, I want to ask you something...
+                </p>
+                <h2 class="heading-lg question-ask">Will You Be My Forever Forever Besttteesssttttttr Friend / Half Girl
+                    Friend For Life? ❤️</h2>
+
+                <div class="button-group">
+                    <button class="btn btn-yes" onclick="goToPage(4)">YES ❤️</button>
+                    <button class="btn btn-no" id="no-btn" onmouseover="moveButton(this)"
+                        ontouchstart="moveButton(this)">NO 😅</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 4: White Roses -->
+    <section id="page-4" class="page">
+        <div class="page-container roses-container">
+            <div class="spotlight-effect"></div>
+
+            <h1 class="heading-xl roses-title">For You ❤️</h1>
+
+            <p class="roses-message">
+                These white roses are for you.<br><br>
+                Because I know how much you love them.<br><br>
+                If I could, I would hand you a bouquet of real white roses right now.<br><br>
+                Until then, I hope these can carry a small piece of what I wanted to tell you.
+            </p>
+
+            <div class="roses-display">
+                <svg class="rose-svg" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Rose 1 -->
+                    <g class="rose" style="animation-delay: 0s">
+                        <line x1="100" y1="120" x2="100" y2="280" stroke="#e8e8e8" stroke-width="2" />
+                        <!-- Petals -->
+                        <ellipse cx="100" cy="60" rx="18" ry="22" fill="#ffffff" opacity="0.9" />
+                        <ellipse cx="90" cy="75" rx="16" ry="20" fill="#f5f5f5" opacity="0.8" />
+                        <ellipse cx="110" cy="75" rx="16" ry="20" fill="#f5f5f5" opacity="0.8" />
+                        <ellipse cx="82" cy="85" rx="14" ry="18" fill="#efefef" opacity="0.7" />
+                        <ellipse cx="118" cy="85" rx="14" ry="18" fill="#efefef" opacity="0.7" />
+                        <ellipse cx="100" cy="100" rx="22" ry="16" fill="#e0e0e0" opacity="0.6" />
+                    </g>
+                    <!-- Rose 2 -->
+                    <g class="rose" style="animation-delay: 0.3s">
+                        <line x1="50" y1="130" x2="45" y2="280" stroke="#e8e8e8" stroke-width="2" />
+                        <ellipse cx="50" cy="70" rx="16" ry="20" fill="#ffffff" opacity="0.9" />
+                        <ellipse cx="42" cy="82" rx="14" ry="18" fill="#f5f5f5" opacity="0.8" />
+                        <ellipse cx="58" cy="82" rx="14" ry="18" fill="#f5f5f5" opacity="0.8" />
+                        <ellipse cx="35" cy="92" rx="12" ry="16" fill="#efefef" opacity="0.7" />
+                        <ellipse cx="65" cy="92" rx="12" ry="16" fill="#efefef" opacity="0.7" />
+                        <ellipse cx="50" cy="105" rx="18" ry="14" fill="#e0e0e0" opacity="0.6" />
+                    </g>
+                    <!-- Rose 3 -->
+                    <g class="rose" style="animation-delay: 0.6s">
+                        <line x1="150" y1="130" x2="155" y2="280" stroke="#e8e8e8" stroke-width="2" />
+                        <ellipse cx="150" cy="70" rx="16" ry="20" fill="#ffffff" opacity="0.9" />
+                        <ellipse cx="142" cy="82" rx="14" ry="18" fill="#f5f5f5" opacity="0.8" />
+                        <ellipse cx="158" cy="82" rx="14" ry="18" fill="#f5f5f5" opacity="0.8" />
+                        <ellipse cx="135" cy="92" rx="12" ry="16" fill="#efefef" opacity="0.7" />
+                        <ellipse cx="165" cy="92" rx="12" ry="16" fill="#efefef" opacity="0.7" />
+                        <ellipse cx="150" cy="105" rx="18" ry="14" fill="#e0e0e0" opacity="0.6" />
+                    </g>
+                </svg>
+            </div>
+
+            <h2 class="heading-lg roses-subtitle">I Knew You Would Say Yes ❤️</h2>
+
+            <p class="roses-final-message">
+                Thank you for being such an important part of my life.<br><br>
+                For every smile,<br>
+                every memory,<br>
+                every conversation,<br>
+                and every moment we've shared.<br><br>
+                You truly mean more to me than words can explain.<br><br>
+                <span class="love-declaration">I Love You, My Bestie ❤️</span>
+            </p>
+
+            <p class="quote">
+                "Some people enter our lives and quietly make everything better."
+            </p>
+
+            <button class="btn btn-primary" onclick="showFinalMessage()">Forever & Always ❤️</button>
+
+            <div id="final-message" class="final-message hidden">
+                <h2 class="heading-lg">Thank You For Everything ❤️</h2>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
